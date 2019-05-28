@@ -1,11 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Display.css';
-c
 
-const calculatorDisplay = ({value})  =>{
+const calculatorDisplay = ({firstvalue ,operator ,secondvalue})  =>{
     return (
         <div className ='display-banner'>
-            <span> 0</span>
+            <span>0</span>
         </div>
     )
 }

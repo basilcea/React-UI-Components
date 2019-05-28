@@ -1,31 +1,36 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import './components/ButtonComponents/Button.css'
 import NumberButton  from './components/ButtonComponents/NumberButton';
 import ActionButton from './components/ButtonComponents/ActionButton';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 
-const NumberArray =['7','8','9','4','5','6','1','2','3'];
-const SymbolsArray =['÷','x' ,'-','+','='];
+const NumberArray =[{value:'7'},{value:'8'},{value:'9'},{value:'4'},{value:'5'},{value:'6'},{value:'1'},{value:'2'},{value:'3'}];
+const SymbolsArray =[{id:'10',label:
+  '÷',value:'/'}, {id:'11',label:'x',value:'*'} ,{id:'12', label:'-', value:'-'},{id:'13',label:'+',value:'+'},{id:'14',label:'=',value:'='}];
 const button = 'button';
 
 const App = () => {
+  const [total , setTotal] = useState(0);
+
+  const
+
   return (
     <div className ='app-container'>
-      <CalculatorDisplay />
+      <CalculatorDisplay   />
       <div className ='action-block'>
         <div className ='numbers-block'>
           <ActionButton  text='Clear'/>
           <div className='numbers'> 
             {NumberArray.map(number => {
-              return <NumberButton key={number} text={number} buttonStyle={button}/>
+              return <NumberButton key={number.value}  text={number.value} buttonStyle={button} />
             })}
           </div>
            <ActionButton  text='0'/>
         </div>
         <div className='symbols'>
-        {SymbolsArray.map(number => {
-          return <NumberButton key={number} text={number} buttonStyle={button}/>
+        {SymbolsArray.map(symbol => {
+          return <NumberButton key={symbol.id}  text={symbol.label} buttonStyle={button}/>
         })}
         </div>
       </div>

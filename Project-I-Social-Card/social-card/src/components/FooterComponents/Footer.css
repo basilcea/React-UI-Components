@@ -1,0 +1,21 @@
+.footer{
+    display:flex;
+    justify-content:flex-start;
+    padding-top:3%;
+    align-items:center;
+    margin-left:11%;
+}
+.footer-socials {
+    display:flex;
+    justify-content:space-between;
+    width:50%;
+}
+.footer-socials button{
+    border:none;
+    background:inherit;
+    width:50%;
+    font-size:1.5em;
+    color:grey;
+    height:50%;
+    outline:none;
+}

@@ -1,1 +1,32 @@
 /* All styles for your header Components live here */
+
+.header{
+    display:flex;
+    justify-content:space-evenly; 
+    padding:3% 0%;
+
+
+}
+.imageDiv{
+    width:15%;
+    height:10%;
+}
+.imageDiv img{
+    width:100%;
+}
+.headerContent{
+    margin:0 2%;
+    
+}
+.headerTitle{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    width:60%;
+}
+.headerTitle span{
+    margin:2% 3%;
+    margin-bottom:0;
+    color:silver;
+}
+

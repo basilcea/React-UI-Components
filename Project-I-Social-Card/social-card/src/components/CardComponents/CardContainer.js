@@ -3,11 +3,16 @@ import './Card.css';
 import '../CardComponents/CardBanner';
 import CardContent from '../CardComponents/CardContent';
 import CardBanner from '../CardComponents/CardBanner';
+const redirect = (e)=>{
+    e.preventDefault();
+    window.location.href='https://www.reactjs.org';
 
-const CardContainer = ({image, imageAlt,  content , alink , avalue})=>{
+}
+
+const CardContainer = ({content , alink , avalue})=>{
     return(
-        <div className ='card-container'>
-            <CardBanner  bannerLink = {image}  bannerAlt ={imageAlt} />
+        <div className ='card-container' onClick ={redirect}>
+            <CardBanner />
             <CardContent  cardContent={content} alink={alink} avalue={avalue} />
         </div>
     )

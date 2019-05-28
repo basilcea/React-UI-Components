@@ -3,11 +3,13 @@ import './App.css';
 import  HeaderContainer from './components/HeaderComponents/HeaderContainer';
 import  Cards from './components/CardComponents/CardContainer';
 import Footer from './components/FooterComponents/Footer';
+import moment from 'moment';
+const date = moment().format('Do MMM')
 
 const props ={
   title: 'Lambda School',
   handler:'@LambdaSchool,',
-  date: '15th',
+  date: date,
   link:'https://tk-assets.lambdaschool.com/1c1b7262-cf23-4a9f-90b6-da0d3c74a5c6_lambdacrest.png ',
   text: `Let’s learn React by building simple interfaces with components, Don’t to overthink it,
       just keep it simple and have fun. Once you are comfortable using components you are well on

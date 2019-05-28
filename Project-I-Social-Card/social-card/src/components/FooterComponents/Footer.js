@@ -2,9 +2,6 @@
 import React from  'react';
 import './Footer.css';
 
-const retweet =(retweets) =>{
-    return (retweets + 1)
-}
 const Footer = ({retweets ,likes}) =>{
     return (
         <div className='footer'>
@@ -12,7 +9,7 @@ const Footer = ({retweets ,likes}) =>{
                 <button>
                 <i className="far fa-comment"></i> 
                 </button>
-                <button onClick={retweet({retweets})}>
+                <button>
                 
                 <i className="fas fa-retweet"></i> {retweets}
                 </button>

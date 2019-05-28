@@ -4,7 +4,7 @@ import './Card.css';
 const CardBanner = ({ bannerLink ,bannerAlt }) =>{
     return(
         <div className='card-banner'>
-        <img src={bannerLink} alt={bannerAlt} />
+        
         </div>
     )
 }

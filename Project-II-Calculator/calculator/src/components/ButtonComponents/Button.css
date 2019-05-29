@@ -1,0 +1,26 @@
+.button{
+    width:33.3%;
+    height:6.4vw;
+    border:1px solid grey;
+    outline:none;
+    font-size:2vw;
+}
+.action-button{
+    height:6.3vw;
+    border:1px solid green;
+    text-align:center;
+    font-size:2.8vw;
+    outline:none;
+
+}
+.display-banner{
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+    align-items:center;
+    font-size:3vw;
+    color:white;
+}
+.display-banner span{
+    padding:2%;
+}
